@@ -85,52 +85,6 @@ int main(){
 
 
 
-// *
-// **
-// ***
-// ****
-// *****
-// ******
-    // int n=6;
-    // for (int i = 0; i<n; i++) {
-    //     for (int j = 0; j < i+1; j++)
-    //     {
-    //         cout<<" * ";
-    //     }
-    //     cout<<endl;
-    
-    // }
-
-
-
-// 12345
-// 1234
-// 123
-// 12
-// 1
-//     int n=5;
-//     for (int i = 0; i<n; i++) {
-//         for (int j = 0; j<n-i; j++) {
-//             cout<<j+1;
-//         }
-//         cout<<endl;
-// }
-
-int rows=6;
-for (int i = 0; i < rows; i++)
-{
-    for (int j = 0; j < rows - i; j++)
-    {
-        cout<<" ";
-    }
-
-    for (int k = 0; k < i+1; k++)
-    {
-        cout<<"* ";
-    }
-    cout<<endl;
-
-}
 
 
 }
