@@ -289,33 +289,147 @@ int main(){
 // 3*3*3
 // 2*2
 // 1
+// int k;
+// cout<<"Enter value of k : ";
+// cin>>k;
+
+// for(int i=0; i<k; i++){
+//     for(int j=0; j<i*2-1;j++){
+//         if(j%2==0){
+//             cout<<i;
+//         }
+//         else{
+//             cout<<"*";
+//         }
+//     }
+//         cout<<endl;
+// }
+
+//     for (int i = k-1; i>=0;i--){
+//         for(int j=0; j<i*2-1;j++){
+//              if(j%2==0){
+//             cout<<i;
+//         }
+//         else{
+//             cout<<"*";
+//         }
+//         }
+//         cout<<endl;
+//     }
+
+
+
+
+
+// 1
+// 121
+// 12321
+// 1234321
+// 123454321
+
+// int k;
+// cout<<"Enter value of k : ";
+// cin>>k;
+// for(int i=0; i< k; i++){
+//     int j;
+//     for(j=0;j<i+1;j++){
+//         int ans = j+1;
+//         char ch=ans+'A' -1;
+//         cout<<ch;
+//     }
+//     j=j-1;
+//     for (; j >=1; j--)
+//     {
+//          int ans = j;
+//         char ch=ans+'A' -1;
+//         cout<<ch;
+//     }
+    
+//     cout<<endl;
+// }
+
+
+
+
+//     1
+//    232
+//   34543
+//  4567654
+// 567898765
+
+//  int k;
+// cout<<"Enter value of k : ";
+// cin>>k;
+
+// for(int i=0;i<k;i++){
+//     for(int j=0;j<k-i-1;j++){
+//         cout<<" ";
+//     }
+//     int j;
+//     for(j=0;j<i+1;j++){
+//         cout<<i+1+j;
+//     }
+//     j--;
+//     for(;j>0;j--){
+//         cout<<i+j;
+//     }
+//     cout<<endl;
+// }
+
+
+
+//     1
+//    1 2
+//   1   3
+//  1     4
+// 1 2 3 4 5
+
 int k;
 cout<<"Enter value of k : ";
 cin>>k;
 
-for(int i=0; i<k; i++){
-    for(int j=0; j<i*2-1;j++){
-        if(j%2==0){
-            cout<<i;
+for(int i=0;i<k;i++){
+    for(int j=0;j<k-1-i;j++){
+        cout<<" ";
+    }
+
+    int count=1;
+    for (int j = 0; j <i*2+1; j++){
+        if(i==0 || i== k-1){
+            if(j%2==0){
+                cout<<count;
+                count++;
+            }   
+            else{
+                cout<<" ";
+            } 
         }
         else{
-            cout<<"*";
+            if(j==0){
+                cout<<1;
+            }
+            else if (j==2*i){
+                cout<<i+1;                
+            }
+            else{
+                cout<<" ";
+            }
         }
+        
     }
-        cout<<endl;
+    cout<<endl;
+    
 }
 
-    for (int i = k-1; i>=0;i--){
-        for(int j=0; j<i*2-1;j++){
-             if(j%2==0){
-            cout<<i;
-        }
-        else{
-            cout<<"*";
-        }
-        }
-        cout<<endl;
-    }
+
+
+
+
+
+
+
+
+
 
     return 0;
 }
